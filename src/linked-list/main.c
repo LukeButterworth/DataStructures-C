@@ -20,9 +20,9 @@ Node new_node(void *data);
 //LinkedList Functions
 LinkedList new_linked_list(DataType type);
 void add(LinkedList list, void *value);
-void remove(LinkedList list, );
-void push(LinkedList list, );
-void pop(LinkedList list, void *value);
+void *remove(LinkedList list, int index);
+void push(LinkedList list, void *value);
+void *pop(LinkedList list);
 
 //Struct Definitions
 typedef struct Node {
@@ -58,6 +58,9 @@ void add(LinkedList list, void *value) {
 	Node new_node;
 
 	list.length++;
+};
+
+void *remove(LinkedList list, int index) {
 };
 
 void push(LinkedList list, void *value) {
